@@ -902,6 +902,42 @@ function Dashboard() {
             </div>
           )}
 
+          {/* Instructions Guide */}
+          <div style={{ marginBottom: "32px", borderRadius: "16px", background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)", padding: "24px", backdropFilter: "blur(12px)", animation: "fadeIn 0.4s ease both" }}>
+            <h2 style={{ margin: "0 0 16px 0", fontSize: "18px", fontWeight: 600, color: "#ffffff", display: "flex", alignItems: "center", gap: "8px" }}>
+              <span>📖</span> App Setup & Required Permissions
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "16px" }}>
+              <div style={{ padding: "16px", background: "rgba(0,0,0,0.2)", borderRadius: "12px", border: "1px solid rgba(59,130,246,0.15)" }}>
+                <h3 style={{ margin: "0 0 8px 0", fontSize: "14px", color: "#60a5fa", display: "flex", alignItems: "center", gap: "6px" }}><span>📍</span> Location</h3>
+                <p style={{ margin: 0, fontSize: "13px", color: "rgba(255,255,255,0.6)", lineHeight: 1.5 }}>
+                  Must enable <strong>Location feature (GPS)</strong> in Android settings and grant location permission to view real-time maps.
+                </p>
+              </div>
+              
+              <div style={{ padding: "16px", background: "rgba(0,0,0,0.2)", borderRadius: "12px", border: "1px solid rgba(239,68,68,0.15)" }}>
+                <h3 style={{ margin: "0 0 8px 0", fontSize: "14px", color: "#ef4444", display: "flex", alignItems: "center", gap: "6px" }}><span>🔒</span> Lock & Unlock</h3>
+                <p style={{ margin: 0, fontSize: "13px", color: "rgba(255,255,255,0.6)", lineHeight: 1.5 }}>
+                  Enable <strong>Device Admin</strong> inside the Android app after login, AND grant <strong>Accessibility permission</strong> in device settings.
+                </p>
+              </div>
+
+              <div style={{ padding: "16px", background: "rgba(0,0,0,0.2)", borderRadius: "12px", border: "1px solid rgba(16,185,129,0.15)" }}>
+                <h3 style={{ margin: "0 0 8px 0", fontSize: "14px", color: "#10b981", display: "flex", alignItems: "center", gap: "6px" }}><span>💬</span> WhatsApp & SMS</h3>
+                <p style={{ margin: 0, fontSize: "13px", color: "rgba(255,255,255,0.6)", lineHeight: 1.5 }}>
+                  Grant <strong>Accessibility permission</strong> in Android settings to allow the app to send messages automatically.
+                </p>
+              </div>
+
+              <div style={{ padding: "16px", background: "rgba(0,0,0,0.2)", borderRadius: "12px", border: "1px solid rgba(236,72,153,0.15)" }}>
+                <h3 style={{ margin: "0 0 8px 0", fontSize: "14px", color: "#f472b6", display: "flex", alignItems: "center", gap: "6px" }}><span>📸</span> Camera</h3>
+                <p style={{ margin: 0, fontSize: "13px", color: "rgba(255,255,255,0.6)", lineHeight: 1.5 }}>
+                  Grant <strong>Camera permissions</strong>. A system notification will appear on the device whenever a picture is captured remotely.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Command Logs */}
           <div>
             <h2 style={{ margin: "0 0 14px 0", fontSize: "18px", fontWeight: 600 }}>📋 Activity Log</h2>

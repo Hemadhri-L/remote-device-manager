@@ -21,7 +21,7 @@ function ForgotPassword() {
     setLoading(true)
 
     try {
-      const response = await fetch("http://localhost:5000/api/send-reset-otp", {
+      const response = await fetch("/api/send-reset-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
@@ -48,7 +48,7 @@ function ForgotPassword() {
     setLoading(true)
 
     try {
-      const response = await fetch("http://localhost:5000/api/verify-reset-otp", {
+      const response = await fetch("/api/verify-reset-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, otp }),
@@ -86,7 +86,7 @@ function ForgotPassword() {
     setLoading(true)
 
     try {
-      const response = await fetch("http://localhost:5000/api/reset-password", {
+      const response = await fetch("/api/reset-password", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, newPassword }),
@@ -115,7 +115,7 @@ function ForgotPassword() {
     setLoading(true)
 
     try {
-      const response = await fetch("http://localhost:5000/api/send-reset-otp", {
+      const response = await fetch("/api/send-reset-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),

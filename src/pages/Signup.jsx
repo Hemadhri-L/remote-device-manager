@@ -37,7 +37,7 @@ function Signup() {
     setLoading(true)
 
     try {
-      const response = await fetch("http://localhost:5000/api/send-otp", {
+      const response = await fetch("/api/send-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
@@ -66,7 +66,7 @@ function Signup() {
 
     try {
       // Verify OTP with backend
-      const response = await fetch("http://localhost:5000/api/verify-otp", {
+      const response = await fetch("/api/verify-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, otp }),
@@ -108,7 +108,7 @@ function Signup() {
     setLoading(true)
 
     try {
-      const response = await fetch("http://localhost:5000/api/send-otp", {
+      const response = await fetch("/api/send-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
