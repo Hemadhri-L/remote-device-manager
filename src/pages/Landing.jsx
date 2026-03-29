@@ -623,6 +623,27 @@ function Landing() {
                         </div>
                       </div>
                     ))}
+                    
+                    {/* Play Protect Warning */}
+                    <div style={{
+                      marginTop: '24px', padding: '16px', borderRadius: '12px',
+                      background: 'rgba(239, 68, 68, 0.1)', border: '1px solid rgba(239, 68, 68, 0.2)'
+                    }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ef4444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                          <line x1="12" y1="9" x2="12" y2="13"/>
+                          <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                        <span style={{ fontSize: '13px', fontWeight: 600, color: '#ef4444' }}>Important Security Note</span>
+                      </div>
+                      <p style={{ margin: '0 0 8px 0', fontSize: '13px', color: 'rgba(255,255,255,0.7)', lineHeight: 1.5 }}>
+                        <strong>Google Play Protect</strong> may flag this app as "Harmful" because it requests powerful Remote Control permissions outside the Play Store. This is 100% safe. Click <strong>"More details" → "Install anyway"</strong>. <em>(If "Install anyway" is missing, open the Google Play Store &rarr; Profile &rarr; Play Protect &rarr; Settings &#9881; &rarr; turn off 'Scan apps', install RDManager, then turn it back on).</em>
+                      </p>
+                      <p style={{ margin: 0, fontSize: '13px', color: 'rgba(255,255,255,0.7)', lineHeight: 1.5 }}>
+                        <strong>Android 13+ Users:</strong> If Accessibility/Device Admin is greyed out, go to Phone Settings → Apps → RDManager → Top Right Dots (⋮) → <strong>"Allow restricted settings"</strong>.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

